@@ -1,5 +1,5 @@
 """PPD discovery and controlled Telegram publishing. Standard library only."""
-import json, os, re, sys, urllib.parse, urllib.request
+import json, os, re, sys, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -29,8 +29,17 @@ def request_json(url, payload=None):
     body = None if payload is None else json.dumps(payload, ensure_ascii=False).encode("utf-8")
     req = urllib.request.Request(url, data=body, headers={
         "User-Agent": "PPD-Research-Library/1.0", "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.load(response)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            return json.load(response)
+    except urllib.error.HTTPError as exc:
+        # Only expose Telegram's safe diagnostic fields; never print the token-bearing URL.
+        try:
+            payload = json.loads(exc.read().decode('utf-8'))
+        except (ValueError, UnicodeError):
+            payload = {}
+        description = str(payload.get('description', 'No description returned'))
+        raise RuntimeError(f'Telegram/API HTTP {exc.code}: {description}') from None
 
 def load(path, default):
     return json.loads(path.read_text("utf-8")) if path.exists() else default
