@@ -143,6 +143,8 @@ def fetch_crossref():
 def discover():
     entries = load(QUEUE, [])
     index = {source_key(x): i for i,x in enumerate(entries) if source_key(x) != 'url:'}
+    by_doi = {normalize_doi(x.get('doi')): i for i,x in enumerate(entries) if normalize_doi(x.get('doi'))}
+    by_pmid = {str(x.get('pmid')): i for i,x in enumerate(entries) if x.get('pmid')}
     found = 0
     failures = []
     for name, fetcher in [('pubmed',fetch_pubmed),('crossref',fetch_crossref),('openalex',fetch_openalex)]:
@@ -155,14 +157,24 @@ def discover():
             if not str(item.get('url','')).startswith('https://'):
                 continue
             key = source_key(item)
-            if key in index:
-                i = index[key]
+            doi = normalize_doi(item.get('doi'))
+            pmid = str(item.get('pmid') or '')
+            i = by_doi.get(doi) if doi else None
+            if i is None and pmid:
+                i = by_pmid.get(pmid)
+            if i is None:
+                i = index.get(key)
+            if i is not None:
                 entries[i] = merge_candidate(entries[i],item)
+                if doi: by_doi[doi] = i
+                if pmid: by_pmid[pmid] = i
                 continue
             entry = {'id':'PPD-'+str(len(entries)+1).zfill(5),**item,
                      'status':'discovered','summary_fa':'','limitations_fa':'',
                      'interpretation_fa':'','source_access':'metadata_only'}
             index[key] = len(entries)
+            if doi: by_doi[doi] = len(entries)
+            if pmid: by_pmid[pmid] = len(entries)
             entries.append(entry)
             found += 1
     save(QUEUE, entries)
