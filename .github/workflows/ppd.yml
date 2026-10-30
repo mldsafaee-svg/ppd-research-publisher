@@ -8,7 +8,7 @@ on:
         description: 'discover, publish, test or learning'
         required: true
         type: choice
-        options: [discover, publish, test, learning, batch]
+        options: [discover, publish, test, learning, batch, replace]
         default: discover
 permissions:
   contents: write
@@ -52,12 +52,18 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
         run: python learning.py batch
+      - name: Replace original ten Telegram posts with Persian versions
+        if: inputs.action == 'replace'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
+        run: python replace_posts.py
       - name: Persist queue and delivery log
-        if: github.event_name == 'schedule' || inputs.action == 'discover' || inputs.action == 'publish' || inputs.action == 'learning' || inputs.action == 'batch'
+        if: github.event_name == 'schedule' || inputs.action == 'discover' || inputs.action == 'publish' || inputs.action == 'learning' || inputs.action == 'batch' || inputs.action == 'replace'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/sources.json data/sent.json data/learning_state.json data/persian_revision_state.json
+          git add data/sources.json data/sent.json data/learning_state.json data/persian_revision_state.json data/replacement_state.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update PPD discovery and publication state'
             git push
