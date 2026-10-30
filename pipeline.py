@@ -1,5 +1,6 @@
 """PPD discovery and controlled Telegram publishing. Standard library only."""
 import json, os, re, sys, urllib.parse, urllib.request, urllib.error
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -55,6 +56,9 @@ def relevant_title(title):
         "postpartum depression", "postnatal depression", "perinatal depression",
         "maternal mental health", "postpartum depressive", "postnatal depressive"))
 
+def valid_year(year):
+    return isinstance(year, int) and 1900 <= year <= datetime.now(timezone.utc).year
+
 def discover():
     entries = load(QUEUE, [])
     existing = {normalize_doi(x.get("doi")) or x.get("url") for x in entries}
@@ -71,9 +75,12 @@ def discover():
         title = (record.get("title") or [""])[0]
         if not relevant_title(title):
             continue
+        year = (record.get('published', {}).get('date-parts') or [[None]])[0][0]
+        if not valid_year(year):
+            continue
         entries.append({"id": "PPD-" + str(len(entries)+1).zfill(5),
                         "doi": doi, "title": title, "url": url,
-                        "year": (record.get("published", {}).get("date-parts") or [[None]])[0][0],
+                        "year": year,
                         "status": "discovered", "summary_fa": "",
                         "limitations_fa": "", "interpretation_fa": "",
                         "source_access": "metadata_only"})
