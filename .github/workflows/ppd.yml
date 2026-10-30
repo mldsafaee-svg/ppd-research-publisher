@@ -41,7 +41,7 @@ jobs:
           TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
         run: python pipeline.py test
       - name: Publish next learning lesson
-        if: github.event_name == 'schedule' || inputs.action == 'learning'
+        if: inputs.action == 'learning'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
