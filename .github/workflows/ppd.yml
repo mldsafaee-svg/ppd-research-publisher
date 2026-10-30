@@ -59,7 +59,7 @@ jobs:
           TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
         run: python replace_posts.py
       - name: Persist queue and delivery log
-        if: github.event_name == 'schedule' || inputs.action == 'discover' || inputs.action == 'publish' || inputs.action == 'learning' || inputs.action == 'batch' || inputs.action == 'replace'
+        if: always() && (github.event_name == 'schedule' || inputs.action == 'discover' || inputs.action == 'publish' || inputs.action == 'learning' || inputs.action == 'batch' || inputs.action == 'replace')
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
