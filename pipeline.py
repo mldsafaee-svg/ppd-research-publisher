@@ -64,6 +64,8 @@ def catalogue_record(item):
     access = item.get('source_access') or 'metadata_only'
     return {
         'id': item.get('id'), 'title': item.get('title'), 'doi': item.get('doi'),
+        'pmid': item.get('pmid'), 'openalex_id': item.get('openalex_id'),
+        'discovered_via': item.get('discovered_via', []),
         'url': item.get('url'), 'year': item.get('year'),
         'evidence_level': access,
         'publication_status': 'approved' if eligible(item) else 'not_approved',
