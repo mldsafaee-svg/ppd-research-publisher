@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: 'discover, publish, test or learning'
+        description: 'discover, publish, test, learning, batch or replace'
         required: true
         type: choice
         options: [discover, publish, test, learning, batch, replace]
@@ -26,7 +26,7 @@ jobs:
       - name: Unit tests
         run: python -m unittest discover -s tests -v
       - name: Discover candidate references
-        if: inputs.action == 'discover'
+        if: github.event_name == 'schedule' || inputs.action == 'discover'
         run: python pipeline.py discover
       - name: Publish approved entries
         if: inputs.action == 'publish'
