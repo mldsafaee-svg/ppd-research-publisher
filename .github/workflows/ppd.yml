@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: 'discover, publish or test'
+        description: 'discover, publish, test or learning'
         required: true
         type: choice
         options: [discover, publish, test, learning]
@@ -40,7 +40,13 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
         run: python pipeline.py test
-      - name: Publish next learning lesson\n        if: github.event_name == 'schedule' || inputs.action == 'learning'\n        env:\n          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}\n          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}\n        run: python learning.py\n      - name: Persist queue and delivery log
+      - name: Publish next learning lesson
+        if: github.event_name == 'schedule' || inputs.action == 'learning'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
+        run: python learning.py
+      - name: Persist queue and delivery log
         if: github.event_name == 'schedule' || inputs.action == 'discover' || inputs.action == 'publish' || inputs.action == 'learning'
         run: |
           git config user.name 'github-actions[bot]'
