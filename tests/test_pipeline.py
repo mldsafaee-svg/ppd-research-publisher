@@ -1,5 +1,5 @@
 import unittest
-from pipeline import normalize_doi, eligible, format_message, relevant_title, valid_year
+from pipeline import normalize_doi, eligible, format_message, relevant_title, valid_year, catalogue_record
 
 class PipelineTests(unittest.TestCase):
     def test_normalize_doi(self):
@@ -13,6 +13,12 @@ class PipelineTests(unittest.TestCase):
         self.assertTrue(relevant_title('Postpartum depression among rural mothers'))
         self.assertFalse(valid_year(2116))
         self.assertTrue(valid_year(2025))
+
+    def test_catalogue_record_preserves_evidence_level(self):
+        record = catalogue_record({'id':'PPD-1','title':'Postpartum depression among rural mothers','doi':'10.1/test','url':'https://doi.org/10.1/test','year':2025,'source_access':'metadata_only'})
+        self.assertEqual(record['evidence_level'], 'metadata_only')
+        self.assertEqual(record['publication_status'], 'not_approved')
+        self.assertIn('متن کامل', record['note_fa'])
 
     def test_message_contains_source_and_disclaimer(self):
         msg = format_message({"id": "PPD-1", "title": "Test", "url": "https://example.org",
