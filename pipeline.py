@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 QUEUE = ROOT / "data" / "sources.json"
 SENT = ROOT / "data" / "sent.json"
+CATALOGUE = ROOT / "data" / "research_catalogue.json"
 API = "https://api.telegram.org/bot"
 
 def normalize_doi(value):
@@ -59,6 +60,22 @@ def relevant_title(title):
 def valid_year(year):
     return isinstance(year, int) and 1900 <= year <= datetime.now(timezone.utc).year
 
+def catalogue_record(item):
+    access = item.get('source_access') or 'metadata_only'
+    return {
+        'id': item.get('id'), 'title': item.get('title'), 'doi': item.get('doi'),
+        'url': item.get('url'), 'year': item.get('year'),
+        'evidence_level': access,
+        'publication_status': 'approved' if eligible(item) else 'not_approved',
+        'note_fa': ('فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است.'
+                    if access == 'metadata_only' else 'سطح دسترسی منبع باید پیش از استناد بررسی شود.')
+    }
+
+def export_catalogue():
+    entries = load(QUEUE, [])
+    save(CATALOGUE, [catalogue_record(x) for x in entries])
+    print('Catalogued records:', len(entries))
+
 def discover():
     entries = load(QUEUE, [])
     existing = {normalize_doi(x.get("doi")) or x.get("url") for x in entries}
@@ -87,6 +104,7 @@ def discover():
         existing.add(doi or url)
         count += 1
     save(QUEUE, entries)
+    export_catalogue()
     print("New metadata-only candidates:", count)
 
 def publish(test=False):
@@ -121,6 +139,8 @@ if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "discover"
     if cmd == "discover":
         discover()
+    elif cmd == 'catalogue':
+        export_catalogue()
     elif cmd == "publish":
         publish()
     elif cmd == "test":
