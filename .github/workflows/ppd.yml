@@ -45,7 +45,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
-        run: python learning.py
+        run: python learning.py revised
       - name: Publish all remaining introductory lessons
         if: inputs.action == 'batch'
         env:
@@ -57,7 +57,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/sources.json data/sent.json data/learning_state.json
+          git add data/sources.json data/sent.json data/learning_state.json data/persian_revision_state.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update PPD discovery and publication state'
             git push
