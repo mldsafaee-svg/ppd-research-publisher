@@ -48,6 +48,13 @@ def save(path, obj):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", "utf-8")
 
+def relevant_title(title):
+    """Require explicit perinatal/postpartum mental-health relevance in title."""
+    t = (title or "").casefold()
+    return any(term in t for term in (
+        "postpartum depression", "postnatal depression", "perinatal depression",
+        "maternal mental health", "postpartum depressive", "postnatal depressive"))
+
 def discover():
     entries = load(QUEUE, [])
     existing = {normalize_doi(x.get("doi")) or x.get("url") for x in entries}
@@ -62,7 +69,7 @@ def discover():
         if not url.startswith("https://") or (doi or url) in existing:
             continue
         title = (record.get("title") or [""])[0]
-        if not title:
+        if not relevant_title(title):
             continue
         entries.append({"id": "PPD-" + str(len(entries)+1).zfill(5),
                         "doi": doi, "title": title, "url": url,
