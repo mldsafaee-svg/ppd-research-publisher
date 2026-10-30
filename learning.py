@@ -6,6 +6,7 @@ from pipeline import load, save, request_json, API, ROOT
 
 PATH = ROOT / "data" / "learning_path.json"
 STATE = ROOT / "data" / "learning_state.json"
+REVISION = ROOT / "data" / "persian_revision_state.json"
 
 def due(state, today):
     return state.get('last_date') != today.isoformat() or state.get('daily_count', 0) < 2
@@ -16,13 +17,15 @@ def next_lesson(lessons, state, today):
         return None
     return lessons[index]
 
-def run(batch=False):
+def run(batch=False, revised=False):
     token = os.getenv("TELEGRAM_BOT_TOKEN")
     if not token:
         raise RuntimeError("TELEGRAM_BOT_TOKEN is missing")
     channel = os.getenv("TELEGRAM_CHANNEL_ID") or "@PPD_Research_FA"
     today = dt.datetime.now(dt.timezone.utc).date()
-    lessons, state = load(PATH, []), load(STATE, {})
+    lessons = load(PATH, [])
+    state_path = REVISION if revised else STATE
+    state = load(state_path, {})
     remaining = len(lessons) - state.get("next_index", 0)
     if remaining <= 0 or (not batch and not due(state, today)):
         print("No learning lesson due")
@@ -41,9 +44,10 @@ def run(batch=False):
         count = (state.get("daily_count", 0) if state.get("last_date") == today.isoformat() else 0) + 1
         state = {"next_index": index + 1, "daily_count": count, "last_date": today.isoformat(),
                  "last_message_id": response["result"]["message_id"]}
-        save(STATE, state)
+        save(state_path, state)
         print("Published learning lesson:", index + 1)
 
 if __name__ == "__main__":
     import sys
-    run(batch=(len(sys.argv) > 1 and sys.argv[1] == "batch"))
+    run(batch=(len(sys.argv) > 1 and sys.argv[1] == "batch"),
+        revised=(len(sys.argv) > 1 and sys.argv[1] == "revised"))
