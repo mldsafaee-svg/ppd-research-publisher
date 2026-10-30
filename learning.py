@@ -1,4 +1,4 @@
-"""Publish the pre-reviewed introductory PPD learning path at most once every 7 days."""
+"""Publish the pre-reviewed introductory PPD learning path at most twice per UTC day."""
 import datetime as dt
 import os
 from pathlib import Path
@@ -8,9 +8,7 @@ PATH = ROOT / "data" / "learning_path.json"
 STATE = ROOT / "data" / "learning_state.json"
 
 def due(state, today):
-    if not state.get("last_date"):
-        return True
-    return (today - dt.date.fromisoformat(state["last_date"])).days >= 7
+    return state.get('last_date') != today.isoformat() or state.get('daily_count', 0) < 2
 
 def next_lesson(lessons, state, today):
     index = state.get("next_index", 0)
@@ -37,7 +35,8 @@ def run():
     response = request_json(API + token + "/sendMessage", {"chat_id": channel, "text": message})
     if not response.get("ok"):
         raise RuntimeError("Telegram send not confirmed")
-    save(STATE, {"next_index": index + 1, "last_date": today.isoformat(),
+    count = (state.get("daily_count", 0) if state.get("last_date") == today.isoformat() else 0) + 1
+    save(STATE, {"next_index": index + 1, "daily_count": count, "last_date": today.isoformat(),
                  "last_message_id": response["result"]["message_id"]})
     print("Published learning lesson:", index + 1)
 
