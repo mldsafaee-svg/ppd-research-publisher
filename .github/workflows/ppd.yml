@@ -8,7 +8,7 @@ on:
         description: 'discover, publish, test or learning'
         required: true
         type: choice
-        options: [discover, publish, test, learning]
+        options: [discover, publish, test, learning, batch]
         default: discover
 permissions:
   contents: write
@@ -46,8 +46,14 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
         run: python learning.py
+      - name: Publish all remaining introductory lessons
+        if: inputs.action == 'batch'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ vars.TELEGRAM_CHANNEL_ID }}
+        run: python learning.py batch
       - name: Persist queue and delivery log
-        if: github.event_name == 'schedule' || inputs.action == 'discover' || inputs.action == 'publish' || inputs.action == 'learning'
+        if: github.event_name == 'schedule' || inputs.action == 'discover' || inputs.action == 'publish' || inputs.action == 'learning' || inputs.action == 'batch'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
