@@ -962,5 +962,53 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00065",
+    "pmid": "42968761",
+    "doi": "10.34172/hpp.45154",
+    "title": "Effect of Midwifery Students' Continuity of Care on Childbirth Fear and Postpartum Depression: An Individually Randomized Two-Arm Superiority Trial.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42968761/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00066",
+    "pmid": "42968740",
+    "doi": "10.34172/hpp.45313",
+    "title": "Effect of Maternal Probiotic Supplementation During Breastfeeding on Postpartum Depression and Bilirubin Levels in Low-Birth-Weight (1000-2000 G) Infants: A Randomized Controlled Trial.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42968740/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00067",
+    "pmid": "42968686",
+    "doi": "10.1097/eja.0000000000002506",
+    "title": "Prophylactic esketamine to reduce postpartum depression in primiparous women: A multicentre, double-blind, randomised clinical trial.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42968686/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
