@@ -1026,5 +1026,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00069",
+    "doi": "10.3390/diagnostics14090865",
+    "title": "Postpartum Depression: Etiology, Treatment, and Consequences for Maternal Care",
+    "url": "https://doi.org/10.3390/diagnostics14090865",
+    "year": 2024,
+    "openalex_id": "https://openalex.org/W4395037995",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]

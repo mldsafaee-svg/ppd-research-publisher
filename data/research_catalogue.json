@@ -988,5 +988,20 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00069",
+    "title": "Postpartum Depression: Etiology, Treatment, and Consequences for Maternal Care",
+    "doi": "10.3390/diagnostics14090865",
+    "pmid": null,
+    "openalex_id": "https://openalex.org/W4395037995",
+    "discovered_via": [
+      "openalex"
+    ],
+    "url": "https://doi.org/10.3390/diagnostics14090865",
+    "year": 2024,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]
