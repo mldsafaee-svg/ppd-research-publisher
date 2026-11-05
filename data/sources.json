@@ -1042,5 +1042,69 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00070",
+    "pmid": "42985228",
+    "doi": "10.1016/j.dib.2026.113210",
+    "title": "A comprehensive dataset for postpartum depression prediction among bangladeshi mothers: Sociodemographic, obstetric, and psychosocial factors with class imbalance insights.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42985228/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00071",
+    "pmid": "42984862",
+    "doi": "10.31083/ap50183",
+    "title": "Postpartum Depression - From Evolutionary Concepts to Neuropsychoendocrinological Backgrounds and New Treatment Medications.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42984862/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00072",
+    "pmid": "42981470",
+    "doi": "10.47626/1516-4446-2026-4916",
+    "title": "Validation and mode of questionnaire administration equivalence of the Edinburgh Postnatal Depression Scale (EPDS) among fathers in Brazil: Birth in Brazil study II.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42981470/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00073",
+    "pmid": "42980824",
+    "doi": "10.1007/s00737-026-01781-4",
+    "title": "Associations between neurodevelopmental traits and perinatal depression: a prospective study in Japanese women.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42980824/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
