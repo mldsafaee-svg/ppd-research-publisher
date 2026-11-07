@@ -1138,5 +1138,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00076",
+    "doi": "10.31440/dftb.67661",
+    "title": "Postpartum depression",
+    "url": "https://doi.org/10.31440/dftb.67661",
+    "year": 2026,
+    "openalex_id": "https://openalex.org/W7140120028",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]

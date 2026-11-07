@@ -1093,5 +1093,20 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00076",
+    "title": "Postpartum depression",
+    "doi": "10.31440/dftb.67661",
+    "pmid": null,
+    "openalex_id": "https://openalex.org/W7140120028",
+    "discovered_via": [
+      "openalex"
+    ],
+    "url": "https://doi.org/10.31440/dftb.67661",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]
