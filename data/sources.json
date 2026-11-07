@@ -1154,5 +1154,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00077",
+    "doi": "10.1007/s40265-024-02038-z",
+    "title": "Postpartum Depression: A Clinical Review of Impact and Current Treatment Solutions",
+    "url": "https://doi.org/10.1007/s40265-024-02038-z",
+    "year": 2024,
+    "openalex_id": "https://openalex.org/W4399193083",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]

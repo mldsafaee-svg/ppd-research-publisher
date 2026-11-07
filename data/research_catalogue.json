@@ -1108,5 +1108,20 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00077",
+    "title": "Postpartum Depression: A Clinical Review of Impact and Current Treatment Solutions",
+    "doi": "10.1007/s40265-024-02038-z",
+    "pmid": null,
+    "openalex_id": "https://openalex.org/W4399193083",
+    "discovered_via": [
+      "openalex"
+    ],
+    "url": "https://doi.org/10.1007/s40265-024-02038-z",
+    "year": 2024,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]
