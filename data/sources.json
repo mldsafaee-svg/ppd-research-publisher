@@ -1170,5 +1170,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00078",
+    "pmid": "42997286",
+    "doi": "10.7759/cureus.c500",
+    "title": "Correction: Postpartum Depression Following a Substance-Exposed Pregnancy: The Role of Age, Race/Ethnicity, and Mental Health History.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42997286/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
