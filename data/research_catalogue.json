@@ -1138,5 +1138,20 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00079",
+    "title": "An update on the pharmacotherapy of postpartum depression",
+    "doi": "10.1002/ijgo.15980",
+    "pmid": null,
+    "openalex_id": "https://openalex.org/W4404042649",
+    "discovered_via": [
+      "openalex"
+    ],
+    "url": "https://doi.org/10.1002/ijgo.15980",
+    "year": 2024,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]

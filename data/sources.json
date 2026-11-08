@@ -1186,5 +1186,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00079",
+    "doi": "10.1002/ijgo.15980",
+    "title": "An update on the pharmacotherapy of postpartum depression",
+    "url": "https://doi.org/10.1002/ijgo.15980",
+    "year": 2024,
+    "openalex_id": "https://openalex.org/W4404042649",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
