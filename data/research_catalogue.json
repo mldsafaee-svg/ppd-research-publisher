@@ -1168,5 +1168,35 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00081",
+    "title": "Long-term consequences of postpartum depression on maternal psychological health and mother-child bonding: A community-based cohort study.",
+    "doi": "10.4103/indianjpsychiatry_1095_25",
+    "pmid": "43011904",
+    "openalex_id": null,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43011904/",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00082",
+    "title": "Disruption of the Non-classical ERα-PCYT1A-Phospholipid-NR5A2 Axis impairs kisspeptin signaling in hypothalamic KNDy neurons and drives postpartum depression.",
+    "doi": "10.1038/s41398-026-04373-z",
+    "pmid": "43009469",
+    "openalex_id": null,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43009469/",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]

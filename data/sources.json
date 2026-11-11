@@ -1218,5 +1218,37 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00081",
+    "pmid": "43011904",
+    "doi": "10.4103/indianjpsychiatry_1095_25",
+    "title": "Long-term consequences of postpartum depression on maternal psychological health and mother-child bonding: A community-based cohort study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43011904/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00082",
+    "pmid": "43009469",
+    "doi": "10.1038/s41398-026-04373-z",
+    "title": "Disruption of the Non-classical ERα-PCYT1A-Phospholipid-NR5A2 Axis impairs kisspeptin signaling in hypothalamic KNDy neurons and drives postpartum depression.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43009469/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
