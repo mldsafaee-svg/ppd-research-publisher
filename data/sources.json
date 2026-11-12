@@ -1250,5 +1250,37 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00083",
+    "pmid": "43016750",
+    "doi": "10.3389/fpsyt.2026.1973469",
+    "title": "Trajectories of perinatal depression, anxiety, perceived stress, sleep quality, and psychological flexibility from pregnancy to six months postpartum and their relationship with the number of abortions and deliveries.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43016750/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00084",
+    "doi": "10.1089/jchc.23.08.0071",
+    "title": "Postpartum Depression in Correctional Populations",
+    "url": "https://doi.org/10.1089/jchc.23.08.0071",
+    "year": 2024,
+    "openalex_id": "https://openalex.org/W4392640616",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
