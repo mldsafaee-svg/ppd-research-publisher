@@ -1282,5 +1282,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00085",
+    "doi": "10.1002/14651858.cd014833.pub2",
+    "title": "Breastfeeding interventions for preventing postpartum depression",
+    "url": "https://doi.org/10.1002/14651858.cd014833.pub2",
+    "year": 2025,
+    "openalex_id": "https://openalex.org/W4407707237",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
