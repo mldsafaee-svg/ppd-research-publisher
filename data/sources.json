@@ -1314,5 +1314,37 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00087",
+    "pmid": "43033820",
+    "doi": "10.1016/j.cmet.2026.11.008",
+    "title": "Postnatal depression-associated breastmilk extracellular vesicles mediate intergenerational effects on offspring neurodevelopment.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43033820/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00088",
+    "pmid": "43033809",
+    "doi": "10.1016/j.midw.2026.105051",
+    "title": "Capturing the patient journey of recent mothers at risk of postnatal depression: proof of concept of a weekly diary study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43033809/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]

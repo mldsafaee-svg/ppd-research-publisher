@@ -1258,5 +1258,35 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00087",
+    "title": "Postnatal depression-associated breastmilk extracellular vesicles mediate intergenerational effects on offspring neurodevelopment.",
+    "doi": "10.1016/j.cmet.2026.11.008",
+    "pmid": "43033820",
+    "openalex_id": null,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43033820/",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00088",
+    "title": "Capturing the patient journey of recent mothers at risk of postnatal depression: proof of concept of a weekly diary study.",
+    "doi": "10.1016/j.midw.2026.105051",
+    "pmid": "43033809",
+    "openalex_id": null,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43033809/",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]
