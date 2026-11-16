@@ -1346,5 +1346,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00089",
+    "pmid": "43036680",
+    "doi": "10.1016/j.crphys.2026.100196",
+    "title": "Betaine supplementation during pregnancy improves postpartum depression, reflexive motor behaviors and brain tissue antioxidant levels in mice offspring.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43036680/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
