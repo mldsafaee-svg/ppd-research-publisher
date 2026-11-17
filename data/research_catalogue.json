@@ -1303,5 +1303,20 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00090",
+    "title": "Prevalence of postpartum depression in China",
+    "doi": "10.5861/ijrsp.2024.016",
+    "pmid": null,
+    "openalex_id": "https://openalex.org/W4401670475",
+    "discovered_via": [
+      "openalex"
+    ],
+    "url": "https://doi.org/10.5861/ijrsp.2024.016",
+    "year": 2024,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]

@@ -1362,5 +1362,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00090",
+    "doi": "10.5861/ijrsp.2024.016",
+    "title": "Prevalence of postpartum depression in China",
+    "url": "https://doi.org/10.5861/ijrsp.2024.016",
+    "year": 2024,
+    "openalex_id": "https://openalex.org/W4401670475",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
