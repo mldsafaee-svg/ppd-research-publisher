@@ -1378,5 +1378,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00091",
+    "pmid": "43039236",
+    "doi": "10.1016/j.jneumeth.2026.110953",
+    "title": "Modeling postpartum depression in rodents: from established paradigms to emerging methodological innovations.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43039236/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
