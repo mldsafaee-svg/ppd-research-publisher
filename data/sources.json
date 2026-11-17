@@ -1394,5 +1394,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00092",
+    "doi": "10.1192/bjp.2025.90",
+    "title": "Neurosteroid treatment of postpartum depression and beyond",
+    "url": "https://doi.org/10.1192/bjp.2025.90",
+    "year": 2025,
+    "openalex_id": "https://openalex.org/W4411066339",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
