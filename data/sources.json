@@ -1410,5 +1410,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00093",
+    "pmid": "43046046",
+    "doi": "10.1186/s12889-026-28821-z",
+    "title": "Be a Mom implementation study protocol: integrating a universal digital intervention for postpartum depression into the Portuguese national health service.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43046046/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
