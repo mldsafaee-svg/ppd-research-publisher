@@ -1426,5 +1426,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00094",
+    "doi": "10.65864/i38ofbqjei",
+    "title": "Postpartum Depression and the Motherhood Penalty",
+    "url": "https://doi.org/10.65864/i38ofbqjei",
+    "year": 2026,
+    "openalex_id": "https://openalex.org/W7167611157",
+    "discovered_via": [
+      "openalex"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
