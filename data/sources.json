@@ -1458,5 +1458,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00096",
+    "pmid": "43055648",
+    "doi": "10.4088/jcp.26com16649",
+    "title": "Methodological Considerations in Clinical Trials for Postpartum Depression: Beyond Traditional Antidepressant Trial Design.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43055648/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]

@@ -1393,5 +1393,20 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00096",
+    "title": "Methodological Considerations in Clinical Trials for Postpartum Depression: Beyond Traditional Antidepressant Trial Design.",
+    "doi": "10.4088/jcp.26com16649",
+    "pmid": "43055648",
+    "openalex_id": null,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43055648/",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]
