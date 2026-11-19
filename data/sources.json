@@ -1442,5 +1442,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00095",
+    "pmid": "43050794",
+    "doi": "10.1016/j.psyneuen.2026.108084",
+    "title": "Efficacy of estrogen therapy for postpartum depression: A systematic review and meta-analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43050794/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
