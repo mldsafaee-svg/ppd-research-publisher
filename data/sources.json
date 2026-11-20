@@ -1490,5 +1490,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00098",
+    "pmid": "43063061",
+    "doi": "10.1097/md.0000000000051594",
+    "title": "Comparison of claims-defined postpartum depression after cesarean delivery under spinal versus epidural anesthesia: A nationwide propensity score-matched cohort study in Korea.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43063061/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
