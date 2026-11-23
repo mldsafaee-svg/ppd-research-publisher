@@ -1522,5 +1522,21 @@
     "limitations_fa": "",
     "interpretation_fa": "",
     "source_access": "metadata_only"
+  },
+  {
+    "id": "PPD-00100",
+    "pmid": "43069661",
+    "doi": "10.1177/15409996261510001",
+    "title": "Perinatal Depression and Breastfeeding Practices Among Healthy Start Participants, 2019-2024.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43069661/",
+    "year": 2026,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "status": "discovered",
+    "summary_fa": "",
+    "limitations_fa": "",
+    "interpretation_fa": "",
+    "source_access": "metadata_only"
   }
 ]
