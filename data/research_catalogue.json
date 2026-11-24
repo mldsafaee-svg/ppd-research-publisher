@@ -1468,5 +1468,35 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00101",
+    "title": "Evaluation of COVID-19 anxiety in pregnancy and its relationship with postpartum depression.",
+    "doi": "10.1186/s12884-026-09896-3",
+    "pmid": "43073898",
+    "openalex_id": null,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43073898/",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00102",
+    "title": "Screening for postpartum depression among postnatal mothers using Edinburgh postpartum depression scale",
+    "doi": "10.18203/2320-1770.ijrcog20241423",
+    "pmid": null,
+    "openalex_id": "https://openalex.org/W4399194847",
+    "discovered_via": [
+      "openalex"
+    ],
+    "url": "https://doi.org/10.18203/2320-1770.ijrcog20241423",
+    "year": 2024,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]
