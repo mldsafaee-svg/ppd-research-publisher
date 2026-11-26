@@ -1498,5 +1498,35 @@
     "evidence_level": "metadata_only",
     "publication_status": "not_approved",
     "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00103",
+    "title": "The lived experience of fathers navigating partners with postpartum depression: a phenomenological study.",
+    "doi": "10.1186/s12884-026-09884-7",
+    "pmid": "43086674",
+    "openalex_id": null,
+    "discovered_via": [
+      "pubmed"
+    ],
+    "url": "https://pubmed.ncbi.nlm.nih.gov/43086674/",
+    "year": 2026,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
+  },
+  {
+    "id": "PPD-00104",
+    "title": "Network Postpartum Depression Bonding",
+    "doi": "",
+    "pmid": null,
+    "openalex_id": "https://openalex.org/W7112368257",
+    "discovered_via": [
+      "openalex"
+    ],
+    "url": "https://openalex.org/W7112368257",
+    "year": 2024,
+    "evidence_level": "metadata_only",
+    "publication_status": "not_approved",
+    "note_fa": "فقط اطلاعات کتاب‌شناختی در دسترس است؛ متن کامل مطالعه نشده و هیچ یافته علمی از آن استخراج نشده است."
   }
 ]
